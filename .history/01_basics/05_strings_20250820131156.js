@@ -1,0 +1,6 @@
+const gameName = new String('Swarnabha-Dutta');
+// console.log(gameName[0]);
+// console.log(gameName)
+// console.log(gameName.length)
+console.log(gameName.charAt('D'));
+console.log(gameName.indexOf(""))

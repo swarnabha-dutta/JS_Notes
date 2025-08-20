@@ -1,0 +1,1 @@
+const gameName = new String('hitesh-hc-com')
