@@ -73,21 +73,21 @@
     //     console.log("Clicked owl id ");
     // },true);
     document.getElementById("images").addEventListener("click",(e)=>{
-        // console.log("Clicked inside of ul tag");
+        console.log("Clicked inside of ul tag");
     },false);
 
 
 
-    // document.getElementById("owl").addEventListener("click",(e)=>{
-        // e.stopPropagation();
-    //     console.log("Clicked owl id ");
-    // },false);
+    document.getElementById("owl").addEventListener("click",(e)=>{
+        e.stopPropagation();
+        console.log("Clicked owl id ");
+    },false);
 
 
-    // document.getElementById("google").addEventListener("click",(e)=>{
-    //     e.preventDefault();
-    //     console.log("clicked on Google ")
-    // },false);
+    document.getElementById("google").addEventListener("click",(e)=>{
+        e.preventDefault();
+        console.log("clicked on Google ")
+    },false);
 
 
 
@@ -95,13 +95,6 @@
 
 // when i click on image that image will be removed 
 
-document.querySelector("#images").addEventListener("click",(e)=>{
-    console.log(e.target.parentNode);
-
-    if(e.target.tagName === "IMG"){
-        let removeIt = e.target.parentNode;
-        removeIt.remove();
-    }
-},false);
+document.querySelector("#images").addEventListener("click",())
 </script>
 </html>

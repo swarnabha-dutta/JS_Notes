@@ -78,16 +78,16 @@
 
 
 
-    // document.getElementById("owl").addEventListener("click",(e)=>{
-        // e.stopPropagation();
-    //     console.log("Clicked owl id ");
-    // },false);
+    document.getElementById("owl").addEventListener("click",(e)=>{
+        e.stopPropagation();
+        console.log("Clicked owl id ");
+    },false);
 
 
-    // document.getElementById("google").addEventListener("click",(e)=>{
-    //     e.preventDefault();
-    //     console.log("clicked on Google ")
-    // },false);
+    document.getElementById("google").addEventListener("click",(e)=>{
+        e.preventDefault();
+        console.log("clicked on Google ")
+    },false);
 
 
 
@@ -97,11 +97,7 @@
 
 document.querySelector("#images").addEventListener("click",(e)=>{
     console.log(e.target.parentNode);
-
-    if(e.target.tagName === "IMG"){
-        let removeIt = e.target.parentNode;
-        removeIt.remove();
-    }
+    let removeIt = e.target.parentode
 },false);
 </script>
 </html>
