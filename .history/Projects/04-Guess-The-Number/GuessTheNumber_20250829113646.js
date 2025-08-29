@@ -1,0 +1,1 @@
+const randomNumberparseInt(Math.random()*100 +1);
