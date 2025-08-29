@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code | DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <div class="language">
+        <li>Python</li>
+    </div>
+</body>
+
+<script>
+    function languageAdd(languageName){
+        const liElement = document.createElement("li");
+        liElement.textContent = `${languageName}`;
+        const parentFind = document.getElementsByClassName(".language")
+        console.log(parentFind)
+        parentFind.appendChild(liElement);
+
+    }
+    languageAdd("Java")
+</script>
+</html>
