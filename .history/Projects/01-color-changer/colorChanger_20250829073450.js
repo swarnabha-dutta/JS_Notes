@@ -59,6 +59,6 @@ const colorMap = {
 
 allBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-        bodySelect.style.backgroundColor = e.target.id;
+        bodySelect.style.backgroundColor=e.target.id
     })
 })

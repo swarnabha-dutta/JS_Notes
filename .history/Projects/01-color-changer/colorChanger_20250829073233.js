@@ -46,19 +46,11 @@ const colorMap = {
 };
 
 
-// allBtns.forEach((btn) => {
-//     btn.addEventListener("click", (e) => {
-//         const color = e.target.id;
-//         if (colorMap[color]) {
-//             bodySelect.style.backgroundColor = colorMap[color];
-//         }
-//     })
-// })
-
-// even more shorter
-
 allBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-        bodySelect.style.backgroundColor = e.target.id;
+        const color = e.target.id;
+        if (colorMap[color]) {
+            bodySelect.style.backgroundColor = colorMap[color];
+        }
     })
 })
