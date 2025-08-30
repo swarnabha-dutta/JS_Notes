@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    // Start Portion 
+    let intervalId=false;
+    
+    let addToBodyBackgroundColor=()=>{
+        let randomColor = Math.floor(Math.random()*16777216).toString(16);
+        let convertedHex  = "#"+randomColor;
+        document.body.style.backgroundColor=convertedHex;
+    }
+    document.querySelector("#start").addEventListener("click",function(){
+        setInterval(addToBodyBackgroundColor,1000);
+        setInterval(addToBodyBackgroundColor,1000);
+    },false);
+
+    document.querySelector("#stop").addEventListener("click",function(){
+        clearInterval(addToBodyBackgroundColor);
+    },false);
+
+
+</script>
+</html>
